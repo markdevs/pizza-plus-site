@@ -40,6 +40,10 @@ button.button, a.buttton {
     color: #fff;
 }
 
+h2.title {
+    padding: 30px 0;
+}
+
 
 
 button.button:hover {
@@ -47,4 +51,20 @@ button.button:hover {
     background-color: transparent;
     border: 1px solid #F79339;
     transition:step-start .3s;
+}
+
+.special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#pizza_card {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.price {
+    padding: 10px 0 ;
 }
