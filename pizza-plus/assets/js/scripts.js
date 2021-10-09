@@ -20,8 +20,8 @@ let plus = [
     {
         id: 3,
         cod: 2003,
-        titulo: 'Rúcula PLus',
-        ingredientes: 'Tomate seco, rúcula ,cebola, muzarella,parmesão, manjericão e molho de tomate',
+        titulo: 'Rúcula Plus',
+        ingredientes: 'Tomate seco, rúcula ,cebola, muzarella,manjericão e molho de tomate',
         preco: 69.90,
         off: true,
         img: 'assets/images/rucula-com-tomate-seco.png'
@@ -55,7 +55,7 @@ startTemplate = () => {
             </div>
             <div class="card-content has-text-centered">
                 <p class="title is-5">${element.titulo}</p>
-                <span>${element.ingredientes}</span>
+                <span class="desc">${element.ingredientes}</span>
                 <p class="title is-6 price">${formatPrice}</p>
                 <button class="button">Add to cart</button>
             </div>

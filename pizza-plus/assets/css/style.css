@@ -68,3 +68,7 @@ button.button:hover {
 .price {
     padding: 10px 0 ;
 }
+
+.desc {
+    font-size: 12px;
+}
