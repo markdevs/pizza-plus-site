@@ -1,0 +1,50 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#brand-logo img {
+    max-height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 560px;
+    background: url('../images/banner.webp') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.call {
+    width: 30%;
+    margin-left: 20%;
+}
+
+.title-banner {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.call p.subtitle {
+    color: #fff;
+    font-weight: 300;
+}
+
+button.button, a.buttton {
+    background-color: #F79339;
+    border: none;
+    color: #fff;
+}
+
+
+
+button.button:hover {
+    color: #F79339;
+    background-color: transparent;
+    border: 1px solid #F79339;
+    transition:step-start .3s;
+}
