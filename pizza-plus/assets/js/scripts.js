@@ -23,7 +23,7 @@ let plus = [
         titulo: 'Rúcula Plus',
         ingredientes: 'Tomate seco, rúcula ,cebola, muzarella,manjericão e molho de tomate',
         preco: 69.90,
-        off: true,
+        off: false,
         img: 'assets/images/rucula-com-tomate-seco.png'
     },
     {
@@ -32,7 +32,7 @@ let plus = [
         titulo: 'Almare Plus',
         ingredientes: 'Camarão, mexilhão,cebola, muzarella, manjericão e molho de tomate',
         preco: 99.90,
-        off: true,
+        off: false,
         img: 'assets/images/almare-plus.png'
     },
 
@@ -57,10 +57,11 @@ startTemplate = () => {
                 <p class="title is-5">${element.titulo}</p>
                 <span class="desc">${element.ingredientes}</span>
                 <p class="title is-6 price">${formatPrice}</p>
-                <button class="button">Add to cart</button>
+                <button class="button" id="add_cart">Add to cart</button>
             </div>
         </div>
         `;
+        
 
         document.getElementById('sec_one').innerHTML += markup;
        
@@ -68,5 +69,19 @@ startTemplate = () => {
     }
 }
 startTemplate();
+
+
+atualizarCarrinho = () => {
+    let clickButtonAddToCart = document.querySelectorAll('#add_cart');
+    let cart = [];
+    for (let i = 0; i < clickButtonAddToCart.length; i++) {
+        const element = clickButtonAddToCart[i];
+        element.addEventListener('click', function(event) {
+            console.log(event);
+        })
+        
+    }
+}
+atualizarCarrinho();
 
 
